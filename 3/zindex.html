@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style>
+.tree
+{
+height: 600px;
+width: auto;
+position: absolute;
+left: 200px;
+top: 50px;
+z-index: 0;
+}
+
+.cow
+{
+height:250px;
+position: absolute;
+left: 250px;
+top: 390px;
+z-index:-1;
+}
+
+.fruit1
+{
+height:100px;
+width:70px;
+position: absolute;
+left: 530px;
+top: 280px;
+z-index:1;
+}
+
+.fruit2
+{
+height:100px;
+width:70px;
+position: absolute;
+left: 420px;
+top: 100px;
+z-index:1;
+}
+
+.para
+{
+float:right;
+color: rgb(0,128,0);
+font-family:arial;
+line-height:1.8;
+font-size:15pt;
+text-align: justify;
+text-indent:75px;
+width: 25%;
+margin:150px;
+}
+</style>
+</head>
+<body>
+
+<img src="tree.png" class="tree">
+<img src="cow.png" class="cow">
+<img src="fruit.png" class="fruit1">
+<img src="fruit.png" class="fruit2">
+<h1>Z-index</h1>
+<p class="para">The z-index property specifies the stack order of an element.
+An element with greater stack order is always in front of an element with a lower stack order.
+Here, The Tree is present at the z-index 0. The Cow is present in the z-index -1. The Fruit is present in the z-index 1. </p>
+</body>
+</html>

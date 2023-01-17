@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css specificity</title>
+<style>
+*
+{
+font-size:10px;
+}
+#id
+{
+font-size:60px;
+color:green;
+}
+.class
+{
+font-size:40px;
+color:blueviolet;
+}
+p
+{
+font-size:20px;
+color:red;
+}
+</style>
+</head>
+<body>
+
+<p>Hello World!<br>Here, Element Selector is applied! Element Selector has specificity value as 1</p>
+
+<p class="class">Hello World!</p>
+<p>Here, Both Class & Element Selector is applied! Class Selector has specificity value as 10</p>
+
+<p id="id" class="class">Hello World!</p>
+<p>Here, Id, Class Selector & Element Selector is applied! Id Selector has specificity value as 100</p>
+
+<p style="color:blue" id="id" class="class">Hello World!</p>
+<p>Inline Selector has specificity value as 1000</p>
+
+<p>Hello World!<br>Universal Selector has specificity value as 0</p>
+</body>
+</html>

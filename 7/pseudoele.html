@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pseudo elements</title>
+        <style>
+            p, li, h1
+            {
+                font-size: 23px;
+                line-height: 40px;
+                width: 500px;
+                text-align: justify;
+                color: rgb(15, 184, 99);
+                font-weight: 700;
+            }
+
+            ::selection
+            {
+                color: red;
+                background-color: aliceblue;
+            }
+
+            ::marker
+            {
+                color: red;
+            }
+
+            P::first-letter
+            {
+                color: blue;
+                font-weight: 500px;
+                font-size: xx-large;
+            }
+
+            p::first-line
+            {
+                color: blue;
+                font-variant: small-caps;
+            }
+        </style>
+    </head>
+    <body><center><br>
+        <p>Pseudo Elements<br><br>A pseudo-class is used to define a special state of an element. 
+        For example, it can be used to style an element when a user mouses over it. Also, to style visited and unvisited links differently.<br><br>Multiple Pseudo Elements<br>
+        <ul>
+            <li>after</li>
+            <li>before</li>
+            <li>marker</li>
+            <li>selection</li>
+            <li>first-line</li>
+            <li>first-letter</li>
+        </ul>
+        </p>
+    </center>
+    </body>
+</html>

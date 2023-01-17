@@ -1,0 +1,24 @@
+@mixin important-text
+{
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.warn
+{
+  @include important-text;
+  background-color: yellow;
+}
+
+@mixin bordered($color, $width)
+{
+  border: $width solid $color;
+}
+
+.statment
+{
+  @include bordered(blue, 1px);
+  font-size:20px;
+  padding:5px;
+}
